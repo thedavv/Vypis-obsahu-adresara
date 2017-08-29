@@ -16,11 +16,11 @@ public class AdresaryStructurePrintout {
 			System.out.print("+");
 			System.out.println(currentFile.getName());
 
-			if(currentFile.isDirectory()){
+			
 				for (File f : currentFile.listFiles()) {
 					currentAddresaryPrintout(f, space + 2);	//rekurzia
 				}
-			}
+			
 		} else{
 			for (int i = 0; i < space - 2; i++) {
 				System.out.print(" ");
